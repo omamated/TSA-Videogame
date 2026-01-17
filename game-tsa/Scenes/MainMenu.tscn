@@ -1,0 +1,94 @@
+[gd_scene load_steps=10 format=3 uid="uid://cwq8spn0xo0h"]
+
+[ext_resource type="Script" uid="uid://dplitvkcwa0m4" path="res://Scripts/main_menu.gd" id="1_xim88"]
+[ext_resource type="Texture2D" uid="uid://1g7gl5ai77tx" path="res://Sprites/PlayButtonV2.png" id="2_koqhg"]
+[ext_resource type="Texture2D" uid="uid://dw5kty2kwcd37" path="res://Sprites/PlayButtonHover.png" id="3_cmrfp"]
+[ext_resource type="Texture2D" uid="uid://jf7s3xnndvh" path="res://Sprites/CreditsV2.png" id="4_loo7a"]
+[ext_resource type="Texture2D" uid="uid://chk41xih70kvg" path="res://Sprites/CuteMachineGuy.png" id="5_if7li"]
+[ext_resource type="Texture2D" uid="uid://pfbksms5bjhd" path="res://Sprites/EnemyBasicV4.png" id="6_rrcx7"]
+[ext_resource type="Script" uid="uid://ba0j5ssuamxrm" path="res://Scripts/enemy_basic_v_4.gd" id="7_fh7cp"]
+[ext_resource type="Texture2D" uid="uid://ckt3l1ttwmuqi" path="res://Sprites/QuitButtonV3.png" id="8_koqhg"]
+[ext_resource type="PackedScene" uid="uid://b5jmgs3xt5uob" path="res://Scenes/FadeTransitions.tscn" id="9_cmrfp"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xim88")
+
+[node name="Play" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -71.625
+offset_top = -26.875
+offset_right = 71.625
+offset_bottom = 26.875
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_koqhg")
+texture_hover = ExtResource("3_cmrfp")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="CuteMachineGuy" type="Sprite2D" parent="."]
+position = Vector2(991, 551)
+texture = ExtResource("5_if7li")
+
+[node name="EnemyBasicV4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(192, 515)
+texture = ExtResource("6_rrcx7")
+script = ExtResource("7_fh7cp")
+
+[node name="Credits" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -63.0
+offset_top = 35.0
+offset_right = 67.0
+offset_bottom = 115.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("4_loo7a")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="Quit" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -91.0
+offset_top = -159.0
+offset_right = 91.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("8_koqhg")
+ignore_texture_size = true
+
+[node name="FadeTransitions" parent="." instance=ExtResource("9_cmrfp")]
+visible = false
+layout_mode = 0
+
+[node name="Fade_timer" type="Timer" parent="FadeTransitions"]
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="timeout" from="FadeTransitions/Fade_timer" to="." method="_on_fade_timer_timeout"]
