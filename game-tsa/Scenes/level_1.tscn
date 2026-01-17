@@ -1,16 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://cwso3geuia5ob"]
+[gd_scene load_steps=7 format=4 uid="uid://cwso3geuia5ob"]
 
 [ext_resource type="Script" uid="uid://dj6hs2gsn1jce" path="res://Scenes/level_1.gd" id="1_8ffim"]
 [ext_resource type="PackedScene" uid="uid://b5jmgs3xt5uob" path="res://Scenes/FadeTransitions.tscn" id="2_xfk5q"]
 [ext_resource type="PackedScene" uid="uid://d3sf3lqh77wyn" path="res://Scenes/player.tscn" id="3_xfk5q"]
-[ext_resource type="Texture2D" uid="uid://cjcpu4g1phe7t" path="res://icon.svg" id="4_7p6j4"]
 [ext_resource type="Texture2D" uid="uid://u0hvwxnxeisx" path="res://Sprites/Texture/Terrain (16x16).png" id="5_6444e"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6444e"]
-size = Vector2(127, 128)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7p6j4"]
-size = Vector2(130, 130)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_evi0p"]
 texture = ExtResource("5_6444e")
@@ -302,6 +295,7 @@ texture = ExtResource("5_6444e")
 19:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 20:10/0 = 0
 20:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_lsmp6"]
 physics_layer_0/collision_layer = 1
@@ -325,28 +319,9 @@ position_smoothing_speed = 7.5
 [node name="FadeTransitions" parent="." instance=ExtResource("2_xfk5q")]
 visible = false
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(287, 303)
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
-texture = ExtResource("4_7p6j4")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-0.5, 0)
-shape = SubResource("RectangleShape2D_6444e")
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
-position = Vector2(414, 303)
-texture = ExtResource("4_7p6j4")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(412, 304)
-shape = SubResource("RectangleShape2D_7p6j4")
-
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 texture_filter = 1
+position = Vector2(-39, -68)
 scale = Vector2(3, 3)
+tile_map_data = PackedByteArray("AAACAAYAAAAGAAAAAAACAAcAAAAGAAEAAAACAAgAAAAGAAIAAAADAAYAAAAHAAAAAAADAAcAAAAHAAEAAAADAAgAAAAHAAIAAAAEAAYAAAAIAAAAAAAEAAcAAAAIAAEAAAAEAAgAAAAIAAIAAAAFAAYAAAAGAAAAAAAFAAcAAAAGAAEAAAAFAAgAAAAGAAIAAAAGAAYAAAAHAAAAAAAGAAcAAAAHAAEAAAAGAAgAAAAHAAIAAAAHAAYAAAAIAAAAAAAHAAcAAAAIAAEAAAAHAAgAAAAIAAIAAAAIAAYAAAAGAAAAAAAIAAcAAAAGAAEAAAAIAAgAAAAGAAIAAAAJAAYAAAAHAAAAAAAJAAcAAAAHAAEAAAAJAAgAAAAHAAIAAAAKAAYAAAAIAAAAAAAKAAcAAAAIAAEAAAAKAAgAAAAIAAIAAAALAAYAAAAGAAAAAAALAAcAAAAGAAEAAAALAAgAAAAGAAIAAAAMAAYAAAAHAAAAAAAMAAcAAAAHAAEAAAAMAAgAAAAHAAIAAAANAAYAAAAIAAAAAAANAAcAAAAIAAEAAAANAAgAAAAIAAIAAAAOAAYAAAAGAAAAAAAOAAcAAAAGAAEAAAAOAAgAAAAGAAIAAAAPAAYAAAAHAAAAAAAPAAcAAAAHAAEAAAAPAAgAAAAHAAIAAAAQAAYAAAAIAAAAAAAQAAcAAAAIAAEAAAAQAAgAAAAIAAIAAAARAAYAAAAGAAAAAAARAAcAAAAGAAEAAAARAAgAAAAGAAIAAAASAAYAAAAHAAAAAAASAAcAAAAHAAEAAAASAAgAAAAHAAIAAAATAAYAAAAIAAAAAAATAAcAAAAIAAEAAAATAAgAAAAIAAIAAAAUAAYAAAAGAAAAAAAUAAcAAAAGAAEAAAAUAAgAAAAGAAIAAAAVAAYAAAAHAAAAAAAVAAcAAAAHAAEAAAAVAAgAAAAHAAIAAAAWAAYAAAAIAAAAAAAWAAcAAAAIAAEAAAAWAAgAAAAIAAIAAAAXAAYAAAAGAAAAAAAXAAcAAAAGAAEAAAAXAAgAAAAGAAIAAAAYAAYAAAAHAAAAAAAYAAcAAAAHAAEAAAAYAAgAAAAHAAIAAAAZAAYAAAAIAAAAAAAZAAcAAAAIAAEAAAAZAAgAAAAIAAIAAAA=")
 tile_set = SubResource("TileSet_lsmp6")
