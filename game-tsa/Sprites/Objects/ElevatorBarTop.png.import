@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7fsotohwmagb"
-path="res://.godot/imported/ButtonV3.png-8dbd37c921f1f3f25c3ed11f3f85010f.ctex"
+uid="uid://kqf260xe7ew6"
+path="res://.godot/imported/ElevatorBarTop.png-8bbe31ac0670240293c105c580ba33fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/ButtonV3.png"
-dest_files=["res://.godot/imported/ButtonV3.png-8dbd37c921f1f3f25c3ed11f3f85010f.ctex"]
+source_file="res://Sprites/Objects/ElevatorBarTop.png"
+dest_files=["res://.godot/imported/ElevatorBarTop.png-8bbe31ac0670240293c105c580ba33fd.ctex"]
 
 [params]
 

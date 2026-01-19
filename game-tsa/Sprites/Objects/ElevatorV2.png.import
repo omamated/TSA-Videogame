@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gvefivpluiso"
-path="res://.godot/imported/Credits.png-bc46c456420676f47a5f460d56efd1c0.ctex"
+uid="uid://cg8abkgictem8"
+path="res://.godot/imported/ElevatorV2.png-50a06c3666dfb12a1ce1fc4f0ab04c55.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Credits.png"
-dest_files=["res://.godot/imported/Credits.png-bc46c456420676f47a5f460d56efd1c0.ctex"]
+source_file="res://Sprites/Objects/ElevatorV2.png"
+dest_files=["res://.godot/imported/ElevatorV2.png-50a06c3666dfb12a1ce1fc4f0ab04c55.ctex"]
 
 [params]
 
