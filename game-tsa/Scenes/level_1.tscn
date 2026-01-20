@@ -814,6 +814,19 @@ position = Vector2(2284, 165)
 scale = Vector2(1, 1)
 
 [node name="Button" parent="DoorandButton" index="1"]
-position = Vector2(-618, -290)
+position = Vector2(-623, -407)
+
+[node name="Button" parent="DoorandButton/Button" index="0"]
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="DoorandButton/Button/Button" index="0"]
+position = Vector2(5.000038, 101)
+
+[node name="Area2D" parent="DoorandButton/Button" index="1"]
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="DoorandButton/Button/Area2D" index="0"]
+position = Vector2(4.9999924, 71.000015)
+scale = Vector2(0.99999994, 0.99999994)
 
 [editable path="DoorandButton"]
