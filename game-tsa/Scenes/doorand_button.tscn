@@ -111,6 +111,7 @@ tracks/3/keys = {
 
 [sub_resource type="Animation" id="Animation_fiu6h"]
 resource_name = "Button_down"
+length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -118,10 +119,10 @@ tracks/0/path = NodePath("../Button:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.59),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(-0.06666667, 0.59, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [0, 1]
+"values": [0, 1, 0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_udiqj"]
@@ -171,6 +172,7 @@ shape = SubResource("RectangleShape2D_lkbpo")
 metadata/_edit_group_ = true
 
 [node name="Door" type="Sprite2D" parent="."]
+position = Vector2(-3.75, -8.750008)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_tv5ot")
 metadata/_edit_group_ = true
