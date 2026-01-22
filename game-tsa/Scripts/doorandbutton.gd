@@ -1,12 +1,12 @@
 extends Node2D
-@onready var anim := $Door/AnimationPlayer
+
+@onready var anim := $AnimationPlayer
+@onready var door: Sprite2D = $Door
+@onready var button: Sprite2D = $Button
 
 func _ready():
-	$AnimationPlayer.play("DoorClosed")
+	anim.play("DoorClosed")
 
-
-
-func _on_area_2d_body_entered(body: Node2D) -> void:
-	$AnimationPlayer.play("DoorOpen")
-	$AnimationPlayer.play("Button_down")
-	pass # Replace with function body.
+func _on_area_2d_body_entered(_body: Node2D) -> void:
+	anim.play("DoorOpen")
+	anim.queue("Button_down")  # Queue the button animation to play after DoorOpen

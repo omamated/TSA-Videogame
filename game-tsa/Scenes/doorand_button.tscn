@@ -4,6 +4,22 @@
 [ext_resource type="Texture2D" uid="uid://cguwxpqbujilw" path="res://Sprites/Animations/ButtonV3.png" id="3_fiu6h"]
 [ext_resource type="Script" uid="uid://dsymr16timfqb" path="res://Scripts/doorandbutton.gd" id="3_uljax"]
 
+[sub_resource type="Animation" id="Animation_fiu6h"]
+resource_name = "Button_down"
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Button:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.06666667, 0.43333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
 [sub_resource type="Animation" id="Animation_jf7mv"]
 resource_name = "DoorClosed"
 tracks/0/type = "value"
@@ -109,22 +125,6 @@ tracks/3/keys = {
 "values": [0]
 }
 
-[sub_resource type="Animation" id="Animation_fiu6h"]
-resource_name = "Button_down"
-length = 2.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Button:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(-0.06666667, 0.59, 1.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [0, 1, 0]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_udiqj"]
 _data = {
 &"Button_down": SubResource("Animation_fiu6h"),
@@ -134,7 +134,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vgn4p"]
-size = Vector2(99, 17)
+size = Vector2(101.00001, 14.249992)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lkbpo"]
 size = Vector2(108, 50)
@@ -151,6 +151,7 @@ root_node = NodePath("../Door")
 libraries = {
 &"": SubResource("AnimationLibrary_udiqj")
 }
+speed_scale = 2.679
 
 [node name="Button" type="Sprite2D" parent="."]
 position = Vector2(-283.75, -49.999996)
@@ -160,14 +161,15 @@ hframes = 2
 [node name="Button" type="StaticBody2D" parent="Button"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Button/Button"]
-position = Vector2(7.6293945e-06, 112.499985)
+position = Vector2(1.2499924, 118.74999)
+scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("RectangleShape2D_vgn4p")
 metadata/_edit_group_ = true
 
 [node name="Area2D" type="Area2D" parent="Button"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Button/Area2D"]
-position = Vector2(7.1525574e-06, 81.249985)
+position = Vector2(1.250007, 83.74999)
 shape = SubResource("RectangleShape2D_lkbpo")
 metadata/_edit_group_ = true
 
