@@ -187,6 +187,7 @@ texture_filter = 1
 position = Vector2(252, 579)
 scale = Vector2(2, 2)
 texture = ExtResource("6_rrcx7")
+flip_h = true
 script = ExtResource("7_fh7cp")
 
 [node name="Credits" type="TextureButton" parent="."]
