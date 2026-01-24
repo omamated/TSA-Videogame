@@ -1,0 +1,11 @@
+RayCast2D
+AnimatedSprite2D
+CollisionShape2D
+AudioStreamPlayer
+AudioStreamPlayer2D
+StaticBody2D
+Sprite2D
+TileMapLayer
+AnimationPlayer
+Area2D
+Node2D
