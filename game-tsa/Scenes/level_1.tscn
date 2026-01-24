@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dj6hs2gsn1jce" path="res://Scenes/level_1.gd" id="1_8ffim"]
 [ext_resource type="PackedScene" uid="uid://b5jmgs3xt5uob" path="res://Scenes/FadeTransitions.tscn" id="2_xfk5q"]
-[ext_resource type="PackedScene" path="res://Scenes/player.tscn" id="3_xfk5q"]
+[ext_resource type="PackedScene" uid="uid://d3sf3lqh77wyn" path="res://Scenes/player.tscn" id="3_xfk5q"]
 [ext_resource type="Texture2D" uid="uid://pfbksms5bjhd" path="res://Sprites/EnemyBasicV4.png" id="4_uy8f0"]
 [ext_resource type="Script" uid="uid://ba0j5ssuamxrm" path="res://Scripts/enemy_basic_v_4.gd" id="5_6r07y"]
 [ext_resource type="Texture2D" uid="uid://u0hvwxnxeisx" path="res://Sprites/Texture/Terrain (16x16).png" id="5_6444e"]
@@ -1038,7 +1038,6 @@ flip_h = true
 script = ExtResource("5_6r07y")
 
 [node name="Background" type="TileMapLayer" parent="."]
-visible = false
 z_index = -5
 texture_filter = 1
 position = Vector2(-39, -68)
