@@ -185,7 +185,7 @@ shape = SubResource("RectangleShape2D_lkbpo")
 metadata/_edit_group_ = true
 
 [node name="Door" type="Sprite2D" parent="."]
-position = Vector2(1.2500005, 57.500004)
+position = Vector2(95, 20)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_tv5ot")
 metadata/_edit_group_ = true
@@ -198,7 +198,7 @@ shape = SubResource("RectangleShape2D_bnaj8")
 
 [node name="Dooropen" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(-126.249985, 52.499996)
+position = Vector2(-3.749998, 5)
 scale = Vector2(1.1152344, 1.1103516)
 texture = ExtResource("2_tv5ot")
 

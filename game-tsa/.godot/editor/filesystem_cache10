@@ -3,7 +3,8 @@
 ButtonPress.gd::GDScript::7392684208634257307::1768861552::0::1::::<>RefCounted<><>0<>0<><>::
 enemy.gd::GDScript::6847377245634479::1769139256::0::1::::<>Node2D<><>0<>0<><>::
 icon.svg::CompressedTexture2D::5409617720053835595::1768683340::1768683391::1::::<><><>0<>0<>8552ae9ea5152ad9385d28ebdddc9d16<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://Music/::1769228693
+::res://Music/::1769228876
+time_for_adventure.mp3::AudioStreamMP3::7644035034580048038::1769228876::1769228877::1::::<><><>0<>0<>68f1fb167e06f2b49f29ab80a97aa9aa<>res://.godot/imported/time_for_adventure.mp3-2611079652c87de96685a05b190a2b75.mp3str::
 wood-crate-destory-2-97263.mp3::AudioStreamMP3::6270227221208925446::1769136997::1769136997::1::::<><><>0<>0<>8e06a92e2acba7c6389b04070353d183<>res://.godot/imported/wood-crate-destory-2-97263.mp3-5e2a08a2c64902627103b007dd6c2425.mp3str::
 ::res://Scenes/::1769228693
 area_2d.tscn::PackedScene::729285470450402871::1768861552::0::1::::<><><>0<>0<><>::uid://b7fsotohwmagb::::res://Sprites/Objects/ButtonV3.png<>uid://cguwxpqbujilw::::res://Sprites/Animations/ButtonV3.png
