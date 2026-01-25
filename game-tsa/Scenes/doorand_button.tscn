@@ -1,8 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://diuw4yv3yq8cq"]
+[gd_scene load_steps=15 format=3 uid="uid://diuw4yv3yq8cq"]
 
 [ext_resource type="Texture2D" uid="uid://hh5il6ox3yjj" path="res://Sprites/Objects/DoorLocked.png" id="2_tv5ot"]
+[ext_resource type="Texture2D" uid="uid://bgej4yayo21y2" path="res://Sprites/Objects/DoorCloseV2.png" id="2_uljax"]
 [ext_resource type="Texture2D" uid="uid://cguwxpqbujilw" path="res://Sprites/Animations/ButtonV3.png" id="3_fiu6h"]
 [ext_resource type="Script" uid="uid://dsymr16timfqb" path="res://Scripts/doorandbutton.gd" id="3_uljax"]
+[ext_resource type="Texture2D" uid="uid://be0jhtb3fqavv" path="res://Sprites/Objects/ArrowPoint.png" id="4_tv5ot"]
 
 [sub_resource type="Animation" id="Animation_fiu6h"]
 resource_name = "Button_down"
@@ -58,6 +60,18 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [false, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("2_uljax"), ExtResource("2_tv5ot")]
 }
 
 [sub_resource type="Animation" id="Animation_rkiys"]
@@ -134,11 +148,60 @@ tracks/5/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../Button/Sprite2D:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(17.500023, -2.5000095)]
+}
+
+[sub_resource type="Animation" id="Animation_uljax"]
+resource_name = "Arrow"
+length = 10.0
+loop_mode = 1
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Button/Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(17.500023, -2.5000095), Vector2(17.5, 50)]
+}
+
+[sub_resource type="Animation" id="Animation_vgn4p"]
+resource_name = "Door_init"
+loop_mode = 1
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.95),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("2_uljax"), ExtResource("2_uljax")]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_udiqj"]
 _data = {
+&"Arrow": SubResource("Animation_uljax"),
 &"Button_down": SubResource("Animation_fiu6h"),
 &"DoorOpen": SubResource("Animation_tv5ot"),
+&"Door_init": SubResource("Animation_vgn4p"),
 &"RESET": SubResource("Animation_rkiys")
 }
 
@@ -160,12 +223,18 @@ root_node = NodePath("../Door")
 libraries = {
 &"": SubResource("AnimationLibrary_udiqj")
 }
+autoplay = "Door_init"
 speed_scale = 2.679
 
 [node name="Button" type="Sprite2D" parent="."]
 position = Vector2(-283.75, -49.999996)
 texture = ExtResource("3_fiu6h")
 hframes = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Button"]
+position = Vector2(17.500023, -2.5000095)
+scale = Vector2(0.54882807, 0.54394525)
+texture = ExtResource("4_tv5ot")
 
 [node name="Button" type="StaticBody2D" parent="Button"]
 metadata/_edit_group_ = true
@@ -185,6 +254,8 @@ shape = SubResource("RectangleShape2D_lkbpo")
 metadata/_edit_group_ = true
 
 [node name="Door" type="Sprite2D" parent="."]
+visibility_layer = 4
+z_index = -10
 position = Vector2(1.2500005, 57.500004)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_tv5ot")
@@ -199,7 +270,7 @@ shape = SubResource("RectangleShape2D_bnaj8")
 [node name="Dooropen" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(-126.249985, 52.499996)
-scale = Vector2(1.1152344, 1.1103516)
+scale = Vector2(0.8, 0.796)
 texture = ExtResource("2_tv5ot")
 
 [connection signal="body_entered" from="Button/Area2D" to="." method="_on_area_2d_body_entered"]

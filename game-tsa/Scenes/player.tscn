@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://d3sf3lqh77wyn"]
+[gd_scene load_steps=16 format=3 uid="uid://d3sf3lqh77wyn"]
 
 [ext_resource type="Texture2D" uid="uid://bouhjngbg4p2t" path="res://Sprites/Animations/output-onlinegiftools (2).png" id="1_i3pqv"]
 [ext_resource type="Script" uid="uid://c1fvmm6km27lu" path="res://Scripts/player.gd" id="1_vgqql"]
@@ -87,16 +87,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vgqql"]
-size = Vector2(41, 91)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fkybt"]
-size = Vector2(55, 54)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_x3wgy"]
-size = Vector2(75, 35)
+size = Vector2(75, 90)
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(9, 16)
+position = Vector2(16, 14)
 script = ExtResource("1_vgqql")
 metadata/_edit_group_ = true
 
@@ -110,13 +104,5 @@ frame_progress = 0.6998233
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["player"]]
-position = Vector2(-9.5, 11.5)
+position = Vector2(-12.5, 12)
 shape = SubResource("RectangleShape2D_vgqql")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(-9.5, 9)
-shape = SubResource("RectangleShape2D_fkybt")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
-position = Vector2(-12.5, 12.5)
-shape = SubResource("RectangleShape2D_x3wgy")
