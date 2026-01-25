@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dnasodu0k52t5"
+path="res://.godot/imported/Stressed lands.wav-873f63eece3c7dd1b7cb6eff7d89cda5.sample"
+
+[deps]
+
+source_file="res://Music/Stressed lands.wav"
+dest_files=["res://.godot/imported/Stressed lands.wav-873f63eece3c7dd1b7cb6eff7d89cda5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

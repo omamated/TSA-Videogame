@@ -1,31 +1,32 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769364076
+::res://::1769366730
 ButtonPress.gd::GDScript::7392684208634257307::1769283604::0::1::::<>RefCounted<><>0<>0<><>::
 enemy.gd::GDScript::6847377245634479::1769283604::0::1::::<>Node2D<><>0<>0<><>::
 Enemy.tscn::PackedScene::749234040094748262::1769315539::0::1::::<><><>0<>0<><>::uid://cr4gjb5c5c1ow::::res://Sprites/Animations/EnemyBasicV4.png
 icon.svg::CompressedTexture2D::5409617720053835595::1769283604::1769283604::1::::<><><>0<>0<>8552ae9ea5152ad9385d28ebdddc9d16<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 label.gd::GDScript::5688533190398038303::1769314595::0::1::::<>Label<><>0<>0<><>::
-rich_text_label.gd::GDScript::5575232615417432546::1769317981::0::1::::<>RichTextLabel<><>0<>0<><>::
-::res://Music/::1769288000
+rich_text_label.gd::GDScript::5575232615417432546::1769366730::0::1::::<>RichTextLabel<><>0<>0<><>::
+::res://Music/::1769366846
 smooth-menu-background-449731.mp3::AudioStreamMP3::5216228692006170600::1769288000::1769288000::1::::<><><>0<>0<>6845c280679c45b0f7aa5ea05a21b6a0<>res://.godot/imported/smooth-menu-background-449731.mp3-8d02788cff7585d3935b91b982b54b60.mp3str::
+Stressed lands.wav::AudioStreamWAV::8072835114974787776::1769366846::1769366878::1::::<><><>0<>0<>3652896d6c1b2cc056dd37dcbbc1a347<>res://.godot/imported/Stressed lands.wav-873f63eece3c7dd1b7cb6eff7d89cda5.sample::
 time_for_adventure.mp3::AudioStreamMP3::7644035034580048038::1769283604::1769283658::1::::<><><>0<>0<>cf81631740c22105e8b0d14dbc587289<>res://.godot/imported/time_for_adventure.mp3-2611079652c87de96685a05b190a2b75.mp3str::
 wood-crate-destory-2-97263.mp3::AudioStreamMP3::6270227221208925446::1769283604::1769283604::1::::<><><>0<>0<>8e06a92e2acba7c6389b04070353d183<>res://.godot/imported/wood-crate-destory-2-97263.mp3-5e2a08a2c64902627103b007dd6c2425.mp3str::
-::res://Scenes/::1769320999
+::res://Scenes/::1769366846
 area_2d.tscn::PackedScene::729285470450402871::1769283604::0::1::::<><><>0<>0<><>::uid://b7fsotohwmagb::::res://Sprites/Objects/ButtonV3.png<>uid://cguwxpqbujilw::::res://Sprites/Animations/ButtonV3.png
-BackButton.gd::GDScript::8981067930955428711::1769319493::0::1::::<>Control<><>0<>0<><>::
-control.gd::GDScript::850243764082137980::1769320967::0::1::::<>Control<><>0<>0<><>::
+BackButton.gd::GDScript::8981067930955428711::1769365811::0::1::::<>Control<><>0<>0<><>::
+control.gd::GDScript::850243764082137980::1769366730::0::1::::<>Control<><>0<>0<><>::
 Credits.tscn::PackedScene::2195025636684052546::1769320999::0::1::::<><><>0<>0<><>::uid://md4njrb1otfw::::res://Scenes/control.gd<>uid://216ua8yeh8lr::::res://Sprites/background.png<>uid://cloxjchntwpok::::res://rich_text_label.gd<>uid://d07q42oy4y5c2::::res://Scenes/BackButton.gd<>uid://b5jmgs3xt5uob::::res://Scenes/FadeTransitions.tscn
 doorand_button.tscn::PackedScene::7763449211435089176::1769315476::0::1::::<><><>0<>0<><>::uid://hh5il6ox3yjj::::res://Sprites/Objects/DoorLocked.png<>uid://bgej4yayo21y2::::res://Sprites/Objects/DoorCloseV2.png<>uid://cguwxpqbujilw::::res://Sprites/Animations/ButtonV3.png<>uid://dsymr16timfqb::::res://Scripts/doorandbutton.gd<>uid://be0jhtb3fqavv::::res://Sprites/Objects/ArrowPoint.png
 enemy.tscn::PackedScene::1910007417999632337::1769283604::0::1::::<><><>0<>0<><>::uid://dk1mircoa5d::::res://enemy.gd<>res://.godot/imported/EnemyBasicV4.png-98fcb03ffa555d7857b741b8d243699d.ctex
 FadeTransitions.tscn::PackedScene::4511405701043671597::1769283604::0::1::::<><><>0<>0<><>::
 falling_floor.tscn::PackedScene::8254093675382310204::1769283604::0::1::::<><><>0<>0<><>::
 level_1.gd::GDScript::7855415945672623820::1769283604::0::1::::<>Node2D<><>0<>0<><>::
-level_1.tscn::PackedScene::6355055089362810965::1769315674::0::1::::<><><>0<>0<><>::uid://dj6hs2gsn1jce::::res://Scenes/level_1.gd<>uid://b5jmgs3xt5uob::::res://Scenes/FadeTransitions.tscn<>uid://d3sf3lqh77wyn::::res://Scenes/player.tscn<>uid://pfbksms5bjhd::::res://Sprites/EnemyBasicV4.png<>uid://ba0j5ssuamxrm::::res://Scripts/enemy_basic_v_4.gd<>uid://u0hvwxnxeisx::::res://Sprites/Texture/Terrain (16x16).png<>uid://bxllodr2ytlvm::::res://Sprites/Dungeon Tile Set.png<>uid://216ua8yeh8lr::::res://Sprites/background.png<>uid://knjhwjh48yc2::::res://Scenes/area_2d.tscn<>uid://hh5il6ox3yjj::::res://Sprites/Objects/DoorLocked.png<>uid://dg53e1c5nnpwg::::res://Music/time_for_adventure.mp3<>uid://cvllyxsg4iuok::::res://Music/wood-crate-destory-2-97263.mp3<>uid://cgk1r3jiqylq3::::res://Music/smooth-menu-background-449731.mp3<>uid://diuw4yv3yq8cq::::res://Scenes/doorand_button.tscn<>uid://ncmc7vt6yq55::::res://Scenes/pit_song.gd
-MainMenu.tscn::PackedScene::186825370165863609::1769316839::0::1::::<><><>0<>0<><>::uid://dplitvkcwa0m4::::res://Scripts/main_menu.gd<>uid://1g7gl5ai77tx::::res://Sprites/PlayButtonV2.png<>uid://dw5kty2kwcd37::::res://Sprites/PlayButtonHover.png<>uid://jf7s3xnndvh::::res://Sprites/Icons/CreditsV2.png<>uid://chk41xih70kvg::::res://Sprites/CuteMachineGuy.png<>uid://pfbksms5bjhd::::res://Sprites/EnemyBasicV4.png<>uid://ba0j5ssuamxrm::::res://Scripts/enemy_basic_v_4.gd<>uid://6a58mpy0gci7::::res://Sprites/Icons/CreditsHover.png<>uid://ckt3l1ttwmuqi::::res://Sprites/QuitButtonV3.png<>uid://b5jmgs3xt5uob::::res://Scenes/FadeTransitions.tscn<>uid://bxllodr2ytlvm::::res://Sprites/Dungeon Tile Set.png
+level_1.tscn::PackedScene::6355055089362810965::1769366846::0::1::::<><><>0<>0<><>::uid://dj6hs2gsn1jce::::res://Scenes/level_1.gd<>uid://b5jmgs3xt5uob::::res://Scenes/FadeTransitions.tscn<>uid://d3sf3lqh77wyn::::res://Scenes/player.tscn<>uid://pfbksms5bjhd::::res://Sprites/EnemyBasicV4.png<>uid://ba0j5ssuamxrm::::res://Scripts/enemy_basic_v_4.gd<>uid://u0hvwxnxeisx::::res://Sprites/Texture/Terrain (16x16).png<>uid://bxllodr2ytlvm::::res://Sprites/Dungeon Tile Set.png<>uid://216ua8yeh8lr::::res://Sprites/background.png<>uid://knjhwjh48yc2::::res://Scenes/area_2d.tscn<>uid://hh5il6ox3yjj::::res://Sprites/Objects/DoorLocked.png<>uid://dg53e1c5nnpwg::::res://Music/time_for_adventure.mp3<>uid://cvllyxsg4iuok::::res://Music/wood-crate-destory-2-97263.mp3<>uid://cgk1r3jiqylq3::::res://Music/smooth-menu-background-449731.mp3<>uid://diuw4yv3yq8cq::::res://Scenes/doorand_button.tscn<>uid://ncmc7vt6yq55::::res://Scenes/pit_song.gd
+MainMenu.tscn::PackedScene::186825370165863609::1769366846::0::1::::<><><>0<>0<><>::uid://dplitvkcwa0m4::::res://Scripts/main_menu.gd<>uid://1g7gl5ai77tx::::res://Sprites/PlayButtonV2.png<>uid://dw5kty2kwcd37::::res://Sprites/PlayButtonHover.png<>uid://jf7s3xnndvh::::res://Sprites/Icons/CreditsV2.png<>uid://chk41xih70kvg::::res://Sprites/CuteMachineGuy.png<>uid://pfbksms5bjhd::::res://Sprites/EnemyBasicV4.png<>uid://ba0j5ssuamxrm::::res://Scripts/enemy_basic_v_4.gd<>uid://6a58mpy0gci7::::res://Sprites/Icons/CreditsHover.png<>uid://ckt3l1ttwmuqi::::res://Sprites/QuitButtonV3.png<>uid://b5jmgs3xt5uob::::res://Scenes/FadeTransitions.tscn<>uid://bxllodr2ytlvm::::res://Sprites/Dungeon Tile Set.png
 pit_song.gd::GDScript::917317612397307562::1769288120::0::1::::<>Area2D<><>0<>0<><>::
 player.tscn::PackedScene::9162062662546272245::1769312712::0::1::::<><><>0<>0<><>::uid://bouhjngbg4p2t::::res://Sprites/Animations/output-onlinegiftools (2).png<>uid://c1fvmm6km27lu::::res://Scripts/player.gd<>uid://i6irk6l8gtoq::::res://Sprites/Animations/output-onlinegiftools.png<>uid://clw5fc14i64e4::::res://Sprites/Animations/output-onlinegiftools (3).png
-::res://Scripts/::1769314721
-Button_door.gd::GDScript::6137945005861341354::1769283604::0::1::::<>Area2D<><>0<>0<><>::
+::res://Scripts/::1769364152
+Button_door.gd::GDScript::6137945005861341354::1769364152::0::1::::<>Area2D<><>0<>0<><>::
 door.gd::GDScript::6152699054246168231::1769283604::0::1::::<>RefCounted<><>0<>0<><>::
 doorandbutton.gd::GDScript::8472966679441383861::1769312712::0::1::::<>Node2D<><>0<>0<><>::
 enemy_basic_v_4.gd::GDScript::2438631128432629898::1769283604::0::1::::<>Sprite2D<><>0<>0<><>::
