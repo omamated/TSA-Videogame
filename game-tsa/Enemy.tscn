@@ -35,7 +35,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Walk",
-"speed": 5.0
+"speed": 2.5
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rvmyp"]
@@ -47,13 +47,14 @@ size = Vector2(96, 39)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_52xpa"]
 size = Vector2(64, 8)
 
-[node name="Area2D" type="Area2D"]
+[node name="Enemy" type="Area2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_6do27")
 animation = &"Walk"
 autoplay = "Walk"
+frame_progress = 0.40579274
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 84.75)
