@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hh5il6ox3yjj"
-path="res://.godot/imported/DoorLocked.png-a2b44d22284708543d3a115f78ed6b84.ctex"
+path="res://.godot/imported/DoorLocked.png-c64d0f66566473d3e99ce8f3c0207d6e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/DoorLocked.png"
-dest_files=["res://.godot/imported/DoorLocked.png-a2b44d22284708543d3a115f78ed6b84.ctex"]
+source_file="res://Sprites/Objects/DoorLocked.png"
+dest_files=["res://.godot/imported/DoorLocked.png-c64d0f66566473d3e99ce8f3c0207d6e.ctex"]
 
 [params]
 
