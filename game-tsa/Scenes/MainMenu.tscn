@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://cwq8spn0xo0h"]
+[gd_scene load_steps=14 format=4 uid="uid://cwq8spn0xo0h"]
 
 [ext_resource type="Script" uid="uid://dplitvkcwa0m4" path="res://Scripts/main_menu.gd" id="1_xim88"]
 [ext_resource type="Texture2D" uid="uid://1g7gl5ai77tx" path="res://Sprites/PlayButtonV2.png" id="2_koqhg"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://chk41xih70kvg" path="res://Sprites/CuteMachineGuy.png" id="5_if7li"]
 [ext_resource type="Texture2D" uid="uid://pfbksms5bjhd" path="res://Sprites/EnemyBasicV4.png" id="6_rrcx7"]
 [ext_resource type="Script" uid="uid://ba0j5ssuamxrm" path="res://Scripts/enemy_basic_v_4.gd" id="7_fh7cp"]
+[ext_resource type="Texture2D" uid="uid://6a58mpy0gci7" path="res://Sprites/Icons/CreditsHover.png" id="8_if7li"]
 [ext_resource type="Texture2D" uid="uid://ckt3l1ttwmuqi" path="res://Sprites/QuitButtonV3.png" id="8_koqhg"]
 [ext_resource type="PackedScene" uid="uid://b5jmgs3xt5uob" path="res://Scenes/FadeTransitions.tscn" id="9_cmrfp"]
 [ext_resource type="Texture2D" uid="uid://bxllodr2ytlvm" path="res://Sprites/Dungeon Tile Set.png" id="10_loo7a"]
@@ -205,6 +206,7 @@ offset_bottom = 115.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("4_loo7a")
+texture_hover = ExtResource("8_if7li")
 ignore_texture_size = true
 stretch_mode = 3
 

@@ -39,4 +39,5 @@ func _on_fade_timer_timeout() -> void:
 		get_tree().change_scene_to_file("res://Scenes/level_1.tscn")
 		
 	elif button_type == "Credits":
-		pass
+		if button_type == "Credits":
+			get_tree().change_scene_to_file("res://Scenes/Credits.tscn")
