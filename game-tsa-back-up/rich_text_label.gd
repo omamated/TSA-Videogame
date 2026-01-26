@@ -1,6 +1,6 @@
 extends RichTextLabel
 
-var example_text = "Credits:\n Game Name: OneButton \n This game is created for the TSA Competition\n Produced by: Ayaan, Om, Darsh, Mia, Evan, Nabiha\nSources:\n Music: Pixabay\n Graphics: David G on Itch.io\n With Help By: F3rn\n-Thank you for playing!- "
+var example_text = "Credits:\n Game Name: OneButton \n This game is created for the TSA Competition\n Produced by: Ayaan, Om, Darsh, Mia, Evan, Nabiha\nSources:\n Music: Pixabay\n Graphics: David G on Itch.io\n With Help By: F3rn\n Inspired by One Socket and Gyromite (1985)\n-Thank you for playing!- "
 
 
 
