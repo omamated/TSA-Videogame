@@ -245,7 +245,6 @@ layout_mode = 0
 [node name="Fade_timer" type="Timer" parent="FadeTransitions"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
-visible = false
 z_index = -2
 texture_filter = 1
 scale = Vector2(4, 4)
