@@ -1,4 +1,4 @@
-xtends Area2D
+extends Area2D
 
 @export var door: Node2D
 

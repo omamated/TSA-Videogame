@@ -1,0 +1,98 @@
+[gd_scene load_steps=7 format=3 uid="uid://bi36atekqgukj"]
+
+[ext_resource type="Texture2D" uid="uid://cghupkolm8jjy" path="res://Sprites/Objects/Ball.png" id="1_d2jdq"]
+
+[sub_resource type="GDScript" id="GDScript_d2jdq"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+
+func _on_ball_timer_timeout() -> void:
+	pass # Replace with function body.
+"
+
+[sub_resource type="GDScript" id="GDScript_tok1o"]
+script/source = "extends Area2D
+@onready var ball: Sprite2D = $Ball
+
+
+signal player_died
+const SPEED = 160
+var direction = -1
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	ball.visible = false
+	ball.activate = false
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	position.x += direction * SPEED * delta
+
+
+func _on_timer_timeout() -> void:
+	direction *= 1
+	ball.activate = true
+	
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body.name == \"Player\":
+		emit_signal(\"player_died\", body)
+		get_tree().change_scene_to_file(\"res://Scenes/MainMenu.tscn\")
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_aiea0"]
+radius = 75.00667
+
+[sub_resource type="GDScript" id="GDScript_kxtns"]
+script/source = "extends Area2D
+@onready var ball: Sprite2D = $\"../DeathBall/Ball\"
+var triggered := false
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == \"Player\":
+		triggered = true
+		ball.visible = true
+		ball.activate()
+		
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dqiwp"]
+size = Vector2(20, 131)
+
+[node name="BallHandle" type="Node2D"]
+script = SubResource("GDScript_d2jdq")
+
+[node name="DeathBall" type="Area2D" parent="."]
+script = SubResource("GDScript_tok1o")
+
+[node name="Ball" type="Sprite2D" parent="DeathBall"]
+position = Vector2(1, 0)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_d2jdq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathBall"]
+position = Vector2(-1, -2)
+shape = SubResource("CircleShape2D_aiea0")
+
+[node name="BallTimer" type="Timer" parent="DeathBall"]
+
+[node name="Area2D" type="Area2D" parent="."]
+script = SubResource("GDScript_kxtns")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(330, 216)
+shape = SubResource("RectangleShape2D_dqiwp")
+
+[connection signal="timeout" from="DeathBall/BallTimer" to="." method="_on_ball_timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="DeathBall" method="_on_area_2d_body_entered"]
