@@ -14,8 +14,8 @@ func _process(delta: float) -> void:
 func _on_killbrick_handler_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
 		emit_signal("player_died", body)
-		get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
+		get_tree().change_scene_to_file("res://Scenes/MainMenu_died.tscn")
 
 
 func _on_player_died() -> void:
-		get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
+		get_tree().change_scene_to_file("res://Scenes/MainMenu_died.tscn")
