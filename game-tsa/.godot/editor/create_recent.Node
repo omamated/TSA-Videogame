@@ -1,6 +1,6 @@
 CollisionShape2D
-Node2D
 Area2D
+Node2D
 Timer
 Control
 Label
