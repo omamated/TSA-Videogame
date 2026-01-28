@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=4 uid="uid://cwso3geuia5ob"]
+[gd_scene load_steps=35 format=4 uid="uid://cwso3geuia5ob"]
 
 [ext_resource type="Script" uid="uid://dj6hs2gsn1jce" path="res://Scripts/level_1.gd" id="1_8ffim"]
 [ext_resource type="PackedScene" uid="uid://b5jmgs3xt5uob" path="res://Scenes/FadeTransitions.tscn" id="2_xfk5q"]
@@ -18,7 +18,6 @@
 [ext_resource type="Script" uid="uid://do87nkfp7lo0c" path="res://Scenes/death.gd" id="16_8i23i"]
 [ext_resource type="Script" uid="uid://c0kk45stus7ey" path="res://Scripts/deathbox_2.gd" id="17_8yhm2"]
 [ext_resource type="Script" uid="uid://d22isascqi2ow" path="res://Scenes/voiddeath.gd" id="18_pjppf"]
-[ext_resource type="Script" uid="uid://bpjhu27gai4qc" path="res://Scripts/physics_death.gd" id="19_yltlr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_evi0p"]
 texture = ExtResource("5_6444e")
@@ -1032,9 +1031,6 @@ size = Vector2(359, 76)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yltlr"]
 size = Vector2(2743.25, 453.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ssoq"]
-size = Vector2(867, 55)
-
 [node name="Level 1" type="Node2D"]
 script = ExtResource("1_8ffim")
 
@@ -1207,11 +1203,6 @@ position = Vector2(7434.625, 5526.25)
 shape = SubResource("RectangleShape2D_yltlr")
 script = ExtResource("18_pjppf")
 
-[node name="Physics death" type="CollisionShape2D" parent="KillbrickHandler"]
-position = Vector2(7403.5, 1593.5)
-shape = SubResource("RectangleShape2D_6ssoq")
-script = ExtResource("19_yltlr")
-
 [node name="Label2" type="Label" parent="."]
 offset_left = 5085.0
 offset_top = 2126.0
@@ -1230,11 +1221,9 @@ text = "Time your fall and land on the inside platform"
 [connection signal="body_entered" from="KillbrickHandler" to="KillbrickHandler/Death" method="_on_killbrick_handler_body_entered"]
 [connection signal="body_entered" from="KillbrickHandler" to="KillbrickHandler/Deathbox2" method="_on_killbrick_handler_body_entered"]
 [connection signal="body_entered" from="KillbrickHandler" to="KillbrickHandler/Voiddeath" method="_on_killbrick_handler_body_entered"]
-[connection signal="body_entered" from="KillbrickHandler" to="KillbrickHandler/Physics death" method="_on_killbrick_handler_body_entered"]
 [connection signal="player_died" from="KillbrickHandler/Death" to="KillbrickHandler/Death" method="_on_player_died"]
 [connection signal="player_died" from="KillbrickHandler/Deathbox2" to="KillbrickHandler/Deathbox2" method="_on_player_died"]
 [connection signal="player_died" from="KillbrickHandler/Voiddeath" to="KillbrickHandler/Voiddeath" method="_on_player_died"]
-[connection signal="player_died" from="KillbrickHandler/Physics death" to="KillbrickHandler/Physics death" method="_on_player_died"]
 
 [editable path="DoorandButton3"]
 [editable path="Upanddown"]

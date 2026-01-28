@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://cwq8spn0xo0h"]
+[gd_scene load_steps=16 format=4 uid="uid://cwq8spn0xo0h"]
 
 [ext_resource type="Script" uid="uid://dplitvkcwa0m4" path="res://Scripts/main_menu.gd" id="1_xim88"]
 [ext_resource type="Texture2D" uid="uid://1g7gl5ai77tx" path="res://Sprites/PlayButtonV2.png" id="2_koqhg"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://b5jmgs3xt5uob" path="res://Scenes/FadeTransitions.tscn" id="9_cmrfp"]
 [ext_resource type="Texture2D" uid="uid://bxllodr2ytlvm" path="res://Sprites/Dungeon Tile Set.png" id="10_loo7a"]
 [ext_resource type="AudioStream" uid="uid://dnasodu0k52t5" path="res://Music/Stressed lands.wav" id="11_if7li"]
+[ext_resource type="FontFile" uid="uid://q4i5pj413aks" path="res://Scenes/Ithaca-LVB75.ttf" id="13_fh7cp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_if7li"]
 texture = ExtResource("10_loo7a")
@@ -243,6 +244,16 @@ tile_set = SubResource("TileSet_rrcx7")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_if7li")
 autoplay = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 463.0
+offset_top = 191.0
+offset_right = 707.0
+offset_bottom = 258.0
+theme_override_fonts/font = ExtResource("13_fh7cp")
+theme_override_font_sizes/font_size = 75
+text = "OneButton"
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]
