@@ -1,12 +1,12 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769573945
+::res://::1769654122
 ButtonPress.gd::GDScript::7392684208634257307::1769283604::0::1::::<>RefCounted<><>0<>0<><>::
 enemy.gd::GDScript::6847377245634479::1769481222::0::1::::<>Area2D<><>0<>0<><>::
 Enemy.tscn::PackedScene::749234040094748262::1769392051::0::1::::<><><>0<>0<><>::uid://dk1mircoa5d::::res://enemy.gd<>uid://cr4gjb5c5c1ow::::res://Sprites/Animations/EnemyBasicV4.png
 export_presets.cfg::TextFile::-1::1769573163::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::5409617720053835595::1769283604::1769283604::1::::<><><>0<>0<>8552ae9ea5152ad9385d28ebdddc9d16<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 label.gd::GDScript::5688533190398038303::1769314595::0::1::::<>Label<><>0<>0<><>::
-rich_text_label.gd::GDScript::5575232615417432546::1769366730::0::1::::<>RichTextLabel<><>0<>0<><>::
+rich_text_label.gd::GDScript::5575232615417432546::1769573972::0::1::::<>RichTextLabel<><>0<>0<><>::
 rolling_ball.gd::GDScript::4905399169567068355::1769573163::0::1::::<>Node2D<><>0<>0<><>::
 rolling_ball.tscn::PackedScene::7241574558168147981::1769573163::0::1::::<><><>0<>0<><>::uid://cb5hhca5doqit::::res://rolling_ball.gd<>uid://cghupkolm8jjy::::res://Sprites/Objects/Ball.png<>uid://do87nkfp7lo0c::::res://Scenes/death.gd
 ::res://Music/::1769366878
@@ -14,11 +14,11 @@ smooth-menu-background-449731.mp3::AudioStreamMP3::5216228692006170600::17692880
 Stressed lands.wav::AudioStreamWAV::8072835114974787776::1769366846::1769366878::1::::<><><>0<>0<>3652896d6c1b2cc056dd37dcbbc1a347<>res://.godot/imported/Stressed lands.wav-873f63eece3c7dd1b7cb6eff7d89cda5.sample::
 time_for_adventure.mp3::AudioStreamMP3::7644035034580048038::1769283604::1769283658::1::::<><><>0<>0<>cf81631740c22105e8b0d14dbc587289<>res://.godot/imported/time_for_adventure.mp3-2611079652c87de96685a05b190a2b75.mp3str::
 wood-crate-destory-2-97263.mp3::AudioStreamMP3::6270227221208925446::1769283604::1769283604::1::::<><><>0<>0<>8e06a92e2acba7c6389b04070353d183<>res://.godot/imported/wood-crate-destory-2-97263.mp3-5e2a08a2c64902627103b007dd6c2425.mp3str::
-::res://Scenes/::1769573163
+::res://Scenes/::1769573972
 area_2d.tscn::PackedScene::729285470450402871::1769283604::0::1::::<><><>0<>0<><>::uid://b7fsotohwmagb::::res://Sprites/Objects/ButtonV3.png<>uid://cguwxpqbujilw::::res://Sprites/Animations/ButtonV3.png
 BackButton.gd::GDScript::8981067930955428711::1769365811::0::1::::<>Control<><>0<>0<><>::
 control.gd::GDScript::850243764082137980::1769366730::0::1::::<>Control<><>0<>0<><>::
-Credits.tscn::PackedScene::2195025636684052546::1769320999::0::1::::<><><>0<>0<><>::uid://md4njrb1otfw::::res://Scenes/control.gd<>uid://216ua8yeh8lr::::res://Sprites/background.png<>uid://cloxjchntwpok::::res://rich_text_label.gd<>uid://d07q42oy4y5c2::::res://Scenes/BackButton.gd<>uid://b5jmgs3xt5uob::::res://Scenes/FadeTransitions.tscn
+Credits.tscn::PackedScene::2195025636684052546::1769573972::0::1::::<><><>0<>0<><>::uid://md4njrb1otfw::::res://Scenes/control.gd<>uid://216ua8yeh8lr::::res://Sprites/background.png<>uid://cloxjchntwpok::::res://rich_text_label.gd<>uid://d07q42oy4y5c2::::res://Scenes/BackButton.gd<>uid://b5jmgs3xt5uob::::res://Scenes/FadeTransitions.tscn
 death.gd::GDScript::8211997020667286660::1769481222::0::1::::<>CollisionShape2D<><>0<>0<><>::
 doorand_button.tscn::PackedScene::7763449211435089176::1769315476::0::1::::<><><>0<>0<><>::uid://hh5il6ox3yjj::::res://Sprites/Objects/DoorLocked.png<>uid://bgej4yayo21y2::::res://Sprites/Objects/DoorCloseV2.png<>uid://cguwxpqbujilw::::res://Sprites/Animations/ButtonV3.png<>uid://dsymr16timfqb::::res://Scripts/doorandbutton.gd<>uid://be0jhtb3fqavv::::res://Sprites/Objects/ArrowPoint.png
 enemy.tscn::PackedScene::1910007417999632337::1769283604::0::1::::<><><>0<>0<><>::uid://dk1mircoa5d::::res://enemy.gd<>res://.godot/imported/EnemyBasicV4.png-98fcb03ffa555d7857b741b8d243699d.ctex
