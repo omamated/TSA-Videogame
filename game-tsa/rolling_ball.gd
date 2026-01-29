@@ -10,9 +10,8 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 
 		print("hi")  # Debug message to confirm it triggered
 		anim.play("drop")
-		anim.queue("wall")
 		anim.queue("run")
-		anim.play("Roller")
+		anim.queue("Roller")
 		
 		
 	pass # Replace with function body.
