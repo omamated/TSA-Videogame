@@ -1,10 +1,18 @@
 extends Node2D
 
 @onready var anim := $AnimationPlayer
-@onready var door: Sprite2D = $Door
-@onready var button: Sprite2D = $Button
-func _ready() -> void:
-	anim.play("Roller")
-	anim.play("Arrow")
-func _on_area_2d_body_entered(_body: Node2D) -> void:
-	anim.play("drop")
+
+
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body.name == "Player":
+
+		print("hi")  # Debug message to confirm it triggered
+		anim.play("drop")
+		anim.queue("wall")
+		anim.queue("run")
+		anim.play("Roller")
+		
+		
+	pass # Replace with function body.
