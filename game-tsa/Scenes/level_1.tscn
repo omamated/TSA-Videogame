@@ -1038,7 +1038,7 @@ size = Vector2(2743.25, 453.5)
 script = ExtResource("1_8ffim")
 
 [node name="Player" parent="." groups=["Player", "player"] instance=ExtResource("3_xfk5q")]
-position = Vector2(12348, 4591)
+position = Vector2(285, 156)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 offset = Vector2(0, -75)
@@ -1054,6 +1054,7 @@ position_smoothing_speed = 7.5
 visible = false
 
 [node name="Background" type="TileMapLayer" parent="."]
+visible = false
 z_index = -5
 texture_filter = 1
 position = Vector2(-39, -68)
