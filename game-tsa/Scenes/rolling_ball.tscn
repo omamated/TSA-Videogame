@@ -1,9 +1,10 @@
-[gd_scene load_steps=24 format=4 uid="uid://dbf4w7i4a3jg4"]
+[gd_scene load_steps=25 format=4 uid="uid://dbf4w7i4a3jg4"]
 
 [ext_resource type="Script" uid="uid://cb5hhca5doqit" path="res://rolling_ball.gd" id="1_02qox"]
 [ext_resource type="Texture2D" uid="uid://cghupkolm8jjy" path="res://Sprites/Objects/Ball.png" id="1_aai4h"]
 [ext_resource type="FontFile" uid="uid://q4i5pj413aks" path="res://Scenes/Ithaca-LVB75.ttf" id="2_8smo4"]
 [ext_resource type="Script" uid="uid://do87nkfp7lo0c" path="res://Scenes/death.gd" id="3_oielf"]
+[ext_resource type="Script" uid="uid://cs7isui03s4ek" path="res://Scenes/deatcharea2d.gd" id="4_7ffao"]
 [ext_resource type="AudioStream" uid="uid://bgst6x5bmel03" path="res://Music/object-fall-soft-275694.mp3" id="4_oielf"]
 [ext_resource type="Texture2D" uid="uid://u0hvwxnxeisx" path="res://Sprites/Texture/Terrain (16x16).png" id="6_pus4f"]
 [ext_resource type="Texture2D" uid="uid://bxllodr2ytlvm" path="res://Sprites/Dungeon Tile Set.png" id="7_7ffao"]
@@ -842,8 +843,7 @@ tracks/4/keys = {
 
 [sub_resource type="Animation" id="Animation_xtbiq"]
 resource_name = "Roller"
-length = 5.0
-loop_mode = 1
+length = 15.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -851,10 +851,10 @@ tracks/0/path = NodePath("ball:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 5),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 6.5666666, 14.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-6.2831855, 6.2831855]
+"values": [-6.2831855, 6.2831855, -6.2831855]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -863,15 +863,17 @@ tracks/1/path = NodePath("ball:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 5),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 6.5666666, 14.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(0, -100), Vector2(1500, -100)]
+"values": [Vector2(0, 1000), Vector2(1500, 1000), Vector2(4000, 1000)]
 }
+
+[sub_resource type="Animation" id="Animation_heteu"]
+resource_name = "disable"
 
 [sub_resource type="Animation" id="Animation_8bde7"]
 resource_name = "drop"
-length = 1000.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -879,10 +881,10 @@ tracks/0/path = NodePath("ball:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(1, 1000.13336),
+"times": PackedFloat32Array(0, 0.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0, 1000), Vector2(0, -100)]
+"values": [Vector2(0, -100), Vector2(0, 1000)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -895,22 +897,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
-}
-
-[sub_resource type="Animation" id="Animation_pus4f"]
-resource_name = "wall"
-length = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("TileMapLayer:enabled")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, true]
 }
 
 [sub_resource type="Animation" id="Animation_7ffao"]
@@ -929,8 +915,21 @@ tracks/0/keys = {
 "values": [false, true]
 }
 
-[sub_resource type="Animation" id="Animation_heteu"]
-resource_name = "disable"
+[sub_resource type="Animation" id="Animation_pus4f"]
+resource_name = "wall"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TileMapLayer:enabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_oielf"]
 _data = {
@@ -943,7 +942,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x062o"]
-size = Vector2(203, 270)
+size = Vector2(2834, 270)
 
 [node name="Rolling ball" type="Node2D"]
 script = ExtResource("1_02qox")
@@ -966,7 +965,8 @@ scale = Vector2(2, 2)
 texture = ExtResource("1_aai4h")
 metadata/_edit_group_ = true
 
-[node name="StaticBody2D" type="StaticBody2D" parent="ball"]
+[node name="StaticBody2D" type="Area2D" parent="ball"]
+script = ExtResource("4_7ffao")
 
 [node name="Death" type="CollisionShape2D" parent="ball/StaticBody2D"]
 position = Vector2(-2.8333375, -4.1197433)
@@ -992,10 +992,9 @@ stream = ExtResource("4_oielf")
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(207, 98)
-metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(91.5, -15)
+position = Vector2(-1174, 1)
 shape = SubResource("RectangleShape2D_x062o")
 
 [connection signal="player_died" from="ball/StaticBody2D/Death" to="ball/StaticBody2D/Death" method="_on_player_died"]
