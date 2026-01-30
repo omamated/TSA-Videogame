@@ -1026,7 +1026,7 @@ size = Vector2(38.333374, 53.166664)
 size = Vector2(1212, 115)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjppf"]
-size = Vector2(674.8999, 76)
+size = Vector2(289.99988, 76)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8yhm2"]
 size = Vector2(51.25, 822)
@@ -1038,7 +1038,7 @@ size = Vector2(2743.25, 453.5)
 script = ExtResource("1_8ffim")
 
 [node name="Player" parent="." groups=["Player", "player"] instance=ExtResource("3_xfk5q")]
-position = Vector2(12348, 4591)
+position = Vector2(149, -175)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 offset = Vector2(0, -75)
@@ -1208,7 +1208,7 @@ shape = SubResource("RectangleShape2D_8yhm2")
 script = ExtResource("16_8i23i")
 
 [node name="Deathbox2" type="CollisionShape2D" parent="KillbrickHandler"]
-position = Vector2(5061, 3212)
+position = Vector2(5095, 3212)
 shape = SubResource("RectangleShape2D_pjppf")
 script = ExtResource("17_8yhm2")
 
